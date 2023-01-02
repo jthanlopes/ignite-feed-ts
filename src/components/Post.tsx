@@ -25,9 +25,7 @@ interface PostProps {
 }
 
 export function Post({author, publishedAt, content}: PostProps) {
-  const [comments, setComments] = useState([
-    'Muito bom Jonathan, parabéns!! 👏👏'
-  ]);
+  const [comments, setComments] = useState([]);
   const [newCommentText, setNewCommentText] = useState('');
   const isNewCommentEmpty = newCommentText.length === 0;
 
